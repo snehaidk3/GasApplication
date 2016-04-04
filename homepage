@@ -1,0 +1,54 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="WebApplication1.WebForm1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <br />
+        Current Destination&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Button1" runat="server" BackColor="Aqua" Text="Reset" />
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;<br />
+        Desired Destination&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox3" runat="server" Width="118px"></asp:TextBox>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;My vehicle gets (in MPG)&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+        <br />
+        <br />
+        Select the size of your gas tank<br />
+        <p style="width: 223px; height: 24px; margin-left: 305px; margin-top: 0px; margin-bottom: 0px">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Slider&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</p>
+        <p style="width: 222px; height: 105px; margin-left: 4px; margin-top: 0px; margin-bottom: 0px">
+            <asp:RadioButton ID="RadioButton1" runat="server" Text="Tiny Tank (10G)" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:RadioButton ID="RadioButton3" runat="server" Text="Small Tank (12-14G)" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+            <asp:RadioButton ID="RadioButton2" runat="server" Text="Mid-size Tank (15-18G)" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:RadioButton ID="RadioButton4"  runat="server" Text="Large Tank (19+G)"  />
+        </p>
+        <p style="width: 602px; height: 35px; margin-left: 274px; margin-top: 34px; margin-bottom: 0px">
+&nbsp;&nbsp;
+            <asp:Table ID="Table1" runat="server" Height="32px" style="margin-top: 7px; margin-left: 0px;" Width="410px">
+                <asp:TableRow runat="server">
+                    <asp:TableCell runat="server">Gas Station Name</asp:TableCell>
+                    <asp:TableCell runat="server">Location</asp:TableCell>
+                    <asp:TableCell runat="server">Price</asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+        </p>
+    </form>
+   <div class="range-slider" data-slider>
+  <span class="range-slider-handle" role="slider" tabindex="0"></span>
+  <span class="range-slider-active-segment"></span>
+  <input type="hidden">
+</div>
+
+    </body>
+</html>
